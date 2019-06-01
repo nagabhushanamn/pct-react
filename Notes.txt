@@ -322,7 +322,59 @@ problems/limitations with plain-js ( your-code ) with browser-apis
 
         -----------------------------------------------------
 
-
-
         Ex1 - clock
+
+        -----------------------------------------------------
+
+
+        to develope front-end appln, we need many tools
+
+        ==> package manager     --> npm / yarn
+
+        ==> transpiler/compiler --> babel
+        ==> module bundler      --> webpack
+        ==> linting             --> ES-lint
+        ==> unit-testing        --> jest
+        
+         
+
+        
+
+        from facebook, we got command-line tool
+
+                - create-react-app cli tool
+        
+
+        --------------------------------------------
+
+        > node -v
+        > npm -v
+
+        > npm i -g yarn
+
+        > npm i -g create-react-app
+
+        on workspace directory
+
+        > create-react-app <app-name>
+
+        > cd app-name
+
+        > npm start | yarn start
+
+        --------------------------------------------
+
+        React topics
+        ------------------
+        
+        component's
+
+        - props & state
+        - life-cycle
+        - data-flow b/w components
+        - context
+        - HOC ( Higher Order Component) pattern
+
+        ---------------------------------------------
+
 
