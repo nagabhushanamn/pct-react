@@ -320,3 +320,9 @@ problems/limitations with plain-js ( your-code ) with browser-apis
         ...
 
 
+        -----------------------------------------------------
+
+
+
+        Ex1 - clock
+
