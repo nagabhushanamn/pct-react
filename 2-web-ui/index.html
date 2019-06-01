@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="container">
+    <hr />
+    <h1>web-ui</h1>
+    <hr />
+    <x-counter value="10"></x-counter>
+    <x-counter value="20"></x-counter>
+    <hr />
+
+    <div id="box1" class="alert alert-danger">
+        <input id="inp1" type="number" onchange="handleChange()" />
+        <hr />
+        <span class="badge badge-primary">0</span>
+    </div>
+
+    <script>
+        let inp1 = document.getElementById('inp1');
+        let applnState = {
+            count: 0
+        }
+        setInterval(() => {
+            applnState.count++;
+            inp1.value = applnState.count; // input's state change ==> will trigger re-render
+            inp1.dispatchEvent(new Event('change'))
+        }, 2000)
+        function handleChange() {
+            document.querySelector('.badge-primary').innerHTML = applnState.count * 100;
+        }
+    </script>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
