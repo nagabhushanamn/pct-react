@@ -5,6 +5,10 @@ import PropTypes from 'prop-types';
 
 import Greeting from './components/Greeting'
 import ActionBox from './components/ActionBox';
+import A from './components/A';
+import Box from './components/Box';
+import Veg from './components/Veg';
+import NonVeg from './components/NonVeg';
 
 
 class App extends React.Component {
@@ -38,6 +42,21 @@ class App extends React.Component {
         <hr />
         <h1>{myTitle} : by &nbsp;
         <span className="badge badge-info">{trainer}</span></h1>
+        <hr />
+        <Box >
+          <Veg />
+          <Veg />
+        </Box>
+        <br/>
+        <Box>
+          <NonVeg />
+          <NonVeg />
+          <NonVeg />
+        </Box>
+        <hr />
+        <A color="red" />
+        <A color="green" />
+        <A color="blue" />
         <hr />
         <ActionBox />
         <hr />

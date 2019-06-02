@@ -373,6 +373,8 @@ problems/limitations with plain-js ( your-code ) with browser-apis
         - life-cycle
         - data-flow b/w components
         - context
+        - container components
+        
         - HOC ( Higher Order Component) pattern
 
         ---------------------------------------------
